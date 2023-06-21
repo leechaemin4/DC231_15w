@@ -3,12 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
-
+// user-select:none
 body {
   width: 100vw;
   height: 100vh;
   margin: 0%;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: "Nanum Myeongjo", serif;
 }
@@ -68,7 +68,7 @@ main {
       rgba(0, 0, 0, 0.555),
       rgb(0, 0, 0)
     ),
-    url("img/타이틀.jpg");
+    url("./img/타이틀.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   &.triggered {
@@ -102,6 +102,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  content {
+    flex-wrap: wrap;
+  }
 }
 
 #section2 {
@@ -308,6 +311,7 @@ section {
     url("img/페르세포네 2.jpg");
   background-size: str-length($string: "10px");
   background-repeat: no-repeat;
+  display: flex;
   .img {
     aspect-ratio: 3/4;
     overflow: hidden;
